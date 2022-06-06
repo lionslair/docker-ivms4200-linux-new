@@ -4,13 +4,13 @@ A docker image pre-installed ivms4200-Linux based on bkjaya1952/q4wine-x11vnc-no
 
 Usage :-
 
-To create a smath container (name ivms) using bkjaya1952/docker-ivms4200-linux-new
+To create a smath container (name ivms) using lionslair/docker-ivms4200-linux-new
 
-Refer:- https://hub.docker.com/r/bkjaya1952/docker-ivms4200-linux-new
+Refer:- https://hub.docker.com/r/lionslair/docker-ivms4200-linux-new
 
 On the Ubuntu terminal
 
-<code>sudo docker create -t -p 8008:8080 --name ivms --privileged=true bkjaya1952/docker-ivms4200-linux-new</code>
+<code>sudo docker create -t -p 8008:8080 --name ivms --privileged=true lionslair/docker-ivms4200-linux-new</code>
 
 <code>sudo docker start ivms</code>
 
@@ -54,7 +54,7 @@ On the terminal enter
 
 Then the timezone file is opened
 
-Go to the top line of the file , press insert key on your key board and enter your timezone ( ie Asia/Colombo)
+Go to the top line of the file , press insert key on your key board and enter your timezone ( ie Australia/Perth)
 
 Then press the Esc key and Shift :x to save & quit the file
 
