@@ -10,7 +10,9 @@ Refer:- https://hub.docker.com/r/lionslair/docker-ivms4200-linux-new
 
 On the Ubuntu terminal
 
-<code>sudo docker create -t -p 8008:8080 --name ivms --privileged=true lionslair/docker-ivms4200-linux-new</code>
+Ensure you have a directory to map the volume to if you are going to use it
+
+<code>sudo docker create -t -p 8008:8080 --name ivms --privileged=true -v ~/Videos/CCTV:/media/cctv:Z lionslair/docker-ivms4200-linux-new</code>
 
 <code>sudo docker start ivms</code>
 
@@ -57,6 +59,4 @@ Then the timezone file is opened
 Go to the top line of the file , press insert key on your key board and enter your timezone ( ie Australia/Perth)
 
 Then press the Esc key and Shift :x to save & quit the file
-
-Done
 
